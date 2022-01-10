@@ -35,7 +35,7 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(236,243,248,255);;
+    background-color: rgba(236,243,248,255);
     color:black;
     z-index: 1;
 }
@@ -120,11 +120,14 @@ body {
     }
 
     .innerbox{
+
         transition: all 0.5s;
       flex: 1 0 100%;
       min-height:25vh;
-      margin-left: 200px;
+      justify-content: center;
+      margin-left: 25%;
       margin-bottom: 5px;
+      align-items: center;
     }
    
 
@@ -153,7 +156,7 @@ body {
         margin-top: 70px;
         display: flex;
         border: 2px solid whitesmoke;
-        width: 50vw;
+        width: 80vw;
         margin-bottom: 50px;
         flex-direction: column;
       }
@@ -172,12 +175,14 @@ body {
  .flexcontainer{
     display: flex;
     flex-flow:row wrap;
-    margin-bottom: 30px;
+    margin-bottom: 30px;justify-content: center;
+      align-items: center;
   }
 
   .innerbox{
     flex:1 0 33%;
      min-height: 33.33vh;
+     
     }
 
 
@@ -187,7 +192,7 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      background-color: lightgray;
+      background-color:rgba(236,243,248,255);
 }
 
 
@@ -295,7 +300,7 @@ body {
       </form>
   
 
-
+    
 
       <!-- CARDS -->
 
@@ -305,7 +310,7 @@ body {
     <p id="mentor"><h1>Mentors</h1></p>
     <div class="flexcontainer">
         <div class="innerbox">
-            <div class="card" style="width:200px; height:370px;margin: 20px; ">
+            <div class="card" style="width:200px; height:370px; ">
                 <img class="card-img-top" src="./images/elon.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                   <h4 class="card-title">Elon musk</h4>
@@ -370,37 +375,41 @@ body {
         </div>
 
 
-    </div>
+      </div>
 
     <!-- PARTICIPANT TABLE -->
     <h1 style="margin-top: 4em;" id="table1">Participants</h1>
     <table class="table table-striped" style="width: 60%;margin: 4em;">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">First Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Handle</th>
+          
+          <th scope="col">Sl.No</th>
+          <th scope="col">Name</th>
+          
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
+          
+          <td>1</td>
+          <td>Alan</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
+          
+          <td>2</td>
+          <td>jijo</td>
+          
         </tr>
         <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
+          
+          <td>3</td>
+          <td>Rahan</td>
+        </tr>
+        
+        <tr>
+          
+          <td>3</td>
+          <td>Akarsh</td>
         </tr>
       </tbody>
     </table>
@@ -436,10 +445,10 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
-contentbody.addEventListener('click', () => {
-    console.log("hi2")
-  navbarLinks.classList.remove('active')
- })
+// contentbody.addEventListener('click', () => {
+//     console.log("hi2")
+//   navbarLinks.classList.remove('active')
+//  })
 
 
 </script>
